@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+  <title>CSS Card Flip</title>
+  <link rel="stylesheet" href="app.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+
+    body {
+      font-family: Lobster two, serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="page-title"> Memory Game</h1>
+  <div class="overlay-text visible">
+   <h6>-Click to Start!-</h6> 
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    Game Over!
+    <span class="overlay-text-medium">-Click to Restart-</span>
+    <span class="overlay-text-small">Your Score: <span id="your-score" class="overlay-text-best">0 </span></span>
+    <span class="overlay-text-small">Lowest Score: <span id="best-score2" class="overlay-text-best">0 </span></span>
+  </div>
+  
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Flips: <span id="flips">0</span>
+      </div>
+      <div class="game-info" id="lowScore">
+        Lowest Score: <span id="lowestScore"> </span> 
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Bunnies.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Bunnies.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Stork.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Stork.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Rodent.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Rodent.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Penguin-Santa.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Penguin-Santa.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Beaver.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Beaver.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Pug_Boot.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Pug_Boot.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Raven_hat.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Raven_hat.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Reindeer-Funny.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="design" src="images/MemStick.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="images/Reindeer-Funny.png">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
